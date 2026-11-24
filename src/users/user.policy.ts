@@ -8,10 +8,16 @@ export class UserPolicy implements PolicyBefore<User> {
   }
 
   list(_user: User | null) {
-    return false;
+    return false; //return Boolean(user?.roles?.some((r) => r.role_name === 'supervisor'));
   }
 
   assignRoles(_user: User | null) {
     return false;
   }
 }
+
+  
+
+  
+
+

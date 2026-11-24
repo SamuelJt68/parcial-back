@@ -8,6 +8,8 @@ import { AppService } from './app.service.js';
 import { UsersModule } from './users/users.module.js';
 import { RolesModule } from './roles/roles.module.js';
 import { AuthModule } from './auth/auth.module.js';
+import { ReservationsModule } from './reservations/reservations.module.js';
+import { ParkingSportsModule } from './parking-sports/parking-sports.module.js';
 
 @Module({
   imports: [
@@ -45,6 +47,8 @@ import { AuthModule } from './auth/auth.module.js';
     UsersModule,
     RolesModule,
     AuthModule,
+    ReservationsModule,
+    ParkingSportsModule,
   ],
   controllers: [AppController],
   providers: [AppService],

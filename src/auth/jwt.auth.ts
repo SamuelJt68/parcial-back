@@ -1,4 +1,3 @@
-// src/auth/jwt.auth.ts
 import { Injectable } from '@nestjs/common';
 import {
   AuthenticationRegistry,
